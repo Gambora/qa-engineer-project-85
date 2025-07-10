@@ -1,0 +1,779 @@
+---
+- summary: |
+    Проверка регистрации пользователя при помощи логина и пароля
+  requirement: |
+    Пользователь может зарегистрироваться на сайте используя логин и пароль
+  prerequisites: |
+    Открыта страница регистрации
+  test-data: |
+    - Nickname = Login45
+    - Email = mail@micro.com
+    - Password = tester818
+    - Password Confirmation = tester818
+  steps:
+    - Нажать "Sing up"
+    - Ввести Nickname
+    - Ввести Email
+    - Ввести Password
+    - Ввести Password Confirmation
+  expected-result: |
+    Пользователь попадает в систему и видит главную страницу
+    
+- summary: |
+    Проверка регистрации пользователя через GitHub и Discord
+  requirement: |
+    Пользователь может зарегистрироваться на сайте через GitHub и Discord
+  prerequisites: |
+    Открыта страница регистрации
+    У пользователя есть аккаунт GitHub и Discord
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать кнопку «Зарегистрироваться через GitHub»
+    - Выйти из системы
+    - Нажать кнопку «Зарегистрироваться через Discord»
+  expected-result: |
+    Пользователь попадает в систему и видит главную страницу
+        
+- summary: |
+    Проверка входа пользователя с существующими логином и паролем
+  requirement: |
+    Вход в систему осуществляется по логину и паролю
+  prerequisites: |
+    У пользователя есть зарегистрированный аккаунт
+    Открыта страница логина
+  test-data: |
+    - Email = mail@micro.com
+    - Password = tester818
+  steps:
+    - Ввести Email
+    - Ввести Password
+    - Нажать "Submit"
+  expected-result: |
+    Пользователь попадает в систему и видит главную страницу
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+        
