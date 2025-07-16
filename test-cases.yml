@@ -239,7 +239,7 @@
     Текст сообщения = "Hello!"
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
-    - В обзем чате написать сообщение
+    - В общем чате написать сообщение
     - Нажать "Отправить"
   expected-result: |
     Текст сообщения отобразился в общем чате, время отправки сообщения отображено верно
@@ -257,7 +257,7 @@
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать "История"
   expected-result: |
-    Открывается информация о сражении (ник, уравень, дата, результат, подробнее)
+    Открывается информация о сражении (ник, уровень, дата, результат, подробнее)
         
 - summary: |
     Успешное завершение поединка при помощи кнопки "Сдаться"
@@ -321,25 +321,6 @@
     - Установить ширину окна 768 пикселей
   expected-result: |
     Все элементы интерфейса адаптированы
-        
-- summary: |
-    Успешная защита от читов
-  requirement: |
-    Сайт должен быть защищён от читов
-  prerequisites: |
-    Пользователь авторизован
-    Идёт активная игра
-  test-data: |
-    Код = 
-
-
-  steps:
-    - Открыть DevTools
-    - Перейти на вкладку Console
-    - Ввести в консоль код
-
-  expected-result: |
-    Сервер отклоняет поддельный результат, попытка зафиксирована как недействительная
 
 - summary: |
     Успешное отображение списка турниров
@@ -384,7 +365,7 @@
     - Перейти на следующую страницу
     - Вернуться на предыдущую страницу
     - Изменить параметр пагинации на 50 пользователей
-    - Прейти на следующю страницу
+    - Прейти на следующую страницу
     - Вернуться на предыдущую страницу
   expected-result: |
     Отображается следующая группа пользователей, общее количество корректно разбивается по страницам
@@ -416,12 +397,12 @@
     Нет данных
   steps:
     - Перейти на главную страницу 
-    - Нажать кнопку «Show»
+    - Нажать кнопку "Show"
   expected-result: |
     Открывается интерфейс игры — задача, код, ход сражения доступны для наблюдения
 
 - summary: |
-    Проверка фильтрации рейтинга по имени, которого нет в базе
+    Успешная фильтрация рейтинга по имени, которого нет в базе
   requirement: |
     При отсутствии совпадений таблица должна быть пуста
   prerequisites: |
@@ -446,10 +427,10 @@
     - Нажать "Завершить игру"
     - Нажать "Подтвердить"
   expected-result: |
-    Пользователь видит сообщение об ошибке: «Игра не найдена» или «Доступ запрещён»
+    Пользователь видит сообщение об ошибке
         
 - summary: |
-    Успешное завершение игры
+    Успешный переход на главную страницу после завершение игры
   requirement: |
     После завершения игры у пользователя автоматически должна открыться главная страница
   prerequisites: |
@@ -463,6 +444,87 @@
     Открыта главная страница
     
 - summary: |
+    Успешная сортировка списка пользователей по рейтингу в убывающем порядке
+  requirement: |
+    Пользователь может сортировать таблицу по рейтингу от меньшего к большему
+  prerequisites: |
+    Пользователь авторизован и находится на странице рейтинга
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на "Rating"
+  expected-result: |
+    Пользователи отсортированы по рейтингу в убывающем порядке
+
+- summary: |
+    Успешная сортировка по столбцу "Games played"
+  requirement: |
+    Пользователь может отсортировать таблицу по количеству игр
+  prerequisites: |
+    Пользователь авторизован и находится на странице рейтинга
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на "Games played"
+    - Ещё раз нажать на "Games played"
+  expected-result: |
+    Таблица отсортирована по количеству сыгранных игр, а затем в обратном порядке
+
+- summary: |
+    Успешная сортировка по дате регистрации пользователей
+  requirement: |
+    Пользователь может сортировать по дате в столбце "Joined"
+  prerequisites: |
+    Пользователь авторизован и находится на странице рейтинга
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать на "Joined"
+    - Нажать на "Joined" ещё раз
+  expected-result: |
+    Пользователи отсортированы по дате регистрации, а затем в обратном порядке
+        
+- summary: |
+    Успешное отображение игр с ботами в списке рейтинга при включенном фильтре
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+    
+
+
+- summary: |
     
   requirement: |
     
@@ -488,6 +550,183 @@
   expected-result: |
 
         
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+        
+- summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    
+  test-data: |
+    Нет данных
+  steps:
+    - 
+  expected-result: |
+
+
 - summary: |
     Проверка возможности поставить звезду проекту на GitHub
   requirement: |
@@ -505,437 +744,8 @@
   expected-result: |
     Звезда успешно установлена
         
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
         
