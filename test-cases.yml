@@ -522,7 +522,7 @@
     - Нажать на ник или аватар
     - Нажать "Settings"
   expected-result: |
-     Открывается страница с настройками пользователя   
+     Открыта страница с настройками пользователя   
 
 - summary: |
     Успешная работа ссылки на сайт Hexlet из меню
@@ -536,7 +536,7 @@
     - Нажать на ник или аватар
     - Нажать "Hexlet"
   expected-result: |
-    В новой вкладке открывается сайт Hexlet
+    В новой вкладке открыт сайт Hexlet
 
 - summary: |
     Успешный переход в раздел "Tournaments" из меню
@@ -570,171 +570,104 @@
 - summary: |
     Успешный переход в общий рейтинг пользователей из меню
   requirement: |
-    
+    Пользователь может открыть страницу рейтинга через меню
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
     - "Users rating"
   expected-result: |
-
+    Открыта таблица рейтинга всех пользователей
 
 - summary: |
-    
+    Успешный переход в Discord по ссылке в меню
   requirement: |
-    
+    Пользователь должен быть перенаправлен в Discord-сообщество проекта
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать на "Join Discord"
   expected-result: |
-
+    В новой вкладке открыта страница приглашения в Discord
         
 - summary: |
-    
+    Успешный переход в Telegram по ссылке в меню
   requirement: |
-    
+    При нажатии на ссылку открывается канал в Telegram
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать "Tg#codebattle"
   expected-result: |
+    В новой вкладке открыта ссылка на вступление в Hexlet сообщество в Телеграм
         
 - summary: |
-    
+    Успешное открытие репозитория GitHub с исходным кодом проекта
   requirement: |
-    
+    Пользователь может просматривать исходный код проекта
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать "SourceCode"
   expected-result: |
-
+    В новой вкладке открыт GitHub с исходным кодом проекта
 
 - summary: |
-    
+    Успешный переход в раздел с задачами для практики
   requirement: |
-    
+    Пользователь может просматривать список задач
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать "Tasks"
   expected-result: |
-
+    Открыта страница со списком задач для решения
         
 - summary: |
-    
+    Успешный переход в раздел со списком кланов
   requirement: |
-    
+    Пользователь может видеть кланы
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать "Clans"
   expected-result: |
+    Открыта страница с кланами
         
 - summary: |
-    
+    Успешный просмотр клана
   requirement: |
-    
+    Пользователь может просматривать подробное описание клана
   prerequisites: |
-    
+    Пользователь авторизован и находится на главной странице
   test-data: |
     Нет данных
   steps:
-    - 
+    - Нажать на ник или аватар
+    - Нажать "Clans"
+    - Нажать на "Show" рядом с любым кланом
   expected-result: |
-
+    Открыта страница с подробным описанием клана
 
 - summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-        
-- summary: |
-    
-  requirement: |
-    
-  prerequisites: |
-    
-  test-data: |
-    Нет данных
-  steps:
-    - 
-  expected-result: |
-
-
-- summary: |
-    Проверка возможности поставить звезду проекту на GitHub
+    Успешная установка звезды проекту на GitHub
   requirement: |
     Есть возможность поставить звезду проекту на GitHub
   prerequisites: |
@@ -749,9 +682,4 @@
     - Нажать на "Stars"
   expected-result: |
     Звезда успешно установлена
-        
-
-
-
-
         
