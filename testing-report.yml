@@ -1,0 +1,224 @@
+---
+- summary: |
+    Успешная регистрация пользователя при помощи логина и пароля
+  status: 
+
+- summary: |
+    Успешная регистрация пользователя через GitHub и Discord
+  status: 
+
+- summary: |
+    Успешный вход пользователя с существующими логином и паролем
+  status: 
+
+- summary: |
+    Успешное отображение истории игр и турниров на главной странице
+  status: 
+
+- summary: |
+    Успешное автоматическое создание личной страницы пользователя
+  status: 
+
+- summary: |
+    Успешное выведение всплывающего окна при наведении на никнейм
+  status: 
+
+- summary: |
+    Успешное создание новой игры с заданными параметрами
+  status: 
+
+- summary: |
+    Успешный вызов игрока на поединок
+  status: 
+
+- summary: |
+    Успешный запуск кода во время игры
+  status: 
+
+- summary: |
+    Успешное отображение лидеров недели на главной странице
+  status: 
+
+- summary: |
+    Успешный запуск поединка с ботом
+  status: 
+
+- summary: |
+    Успешное ограничение по времени во время игры
+  status: 
+
+- summary: |
+    Успешная отправка сообщения в общем чате сайта
+  status: 
+
+- summary: |
+    Успешный просмотр завершённых сражений
+  status: 
+
+- summary: |
+    Успешное завершение поединка при помощи кнопки "Сдаться"
+  status: 
+
+- summary: |
+    Успешный выбор определённой задачи при создании игры
+  status: 
+
+- summary: |
+    Успешная смена языка программирования в процессе игры
+  status: 
+
+- summary: |
+    Успешная адаптивность интерфейса на экране шириной 768 пикселей
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
+
+- summary: |
+    
+  status: 
