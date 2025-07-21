@@ -325,7 +325,6 @@
     - Нажать "Top list"
     - Нажать "Hexlet codebattle"
     - Нажать "Create a game"
-    - 
   expected-result: |
     Все элементы интерфейса адаптированы
 
