@@ -1,224 +1,176 @@
 ---
 - summary: |
     Успешная регистрация пользователя при помощи логина и пароля
-  status: 
+  status: pass
 
 - summary: |
     Успешная регистрация пользователя через GitHub и Discord
-  status: 
+  status: pass
 
 - summary: |
     Успешный вход пользователя с существующими логином и паролем
-  status: 
+  status: pass
 
 - summary: |
     Успешное отображение истории игр и турниров на главной странице
-  status: 
+  status: pass
 
 - summary: |
     Успешное автоматическое создание личной страницы пользователя
-  status: 
+  status: pass
 
 - summary: |
     Успешное выведение всплывающего окна при наведении на никнейм
-  status: 
+  status: pass
 
 - summary: |
     Успешное создание новой игры с заданными параметрами
-  status: 
+  status: pass
 
 - summary: |
     Успешный вызов игрока на поединок
-  status: 
+  status: pass
 
 - summary: |
     Успешный запуск кода во время игры
-  status: 
+  status: pass
 
 - summary: |
     Успешное отображение лидеров недели на главной странице
-  status: 
+  status: pass
 
 - summary: |
     Успешный запуск поединка с ботом
-  status: 
+  status: pass
 
 - summary: |
     Успешное ограничение по времени во время игры
-  status: 
+  status: fail
 
 - summary: |
     Успешная отправка сообщения в общем чате сайта
-  status: 
+  status: pass
 
 - summary: |
     Успешный просмотр завершённых сражений
-  status: 
+  status: pass
 
 - summary: |
     Успешное завершение поединка при помощи кнопки "Сдаться"
-  status: 
+  status: fail
 
 - summary: |
     Успешный выбор определённой задачи при создании игры
-  status: 
+  status: pass
 
 - summary: |
     Успешная смена языка программирования в процессе игры
-  status: 
+  status: pass
 
 - summary: |
-    Успешная адаптивность интерфейса на экране шириной 768 пикселей
-  status: 
+    Успешная адаптивность интерфейса для экрана планшта
+  status: fail
 
 - summary: |
-    
-  status: 
+    Успешное отображение списка турниров
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешное создание турнира
+  status: fail
 
 - summary: |
-    
-  status: 
+    Успешное отображение полного рейтинга пользователей
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная работа пагинации в рейтинге пользователей
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная работа фильтрации в рейтинге по имени пользователя
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный просмотр чужой битвы из лобби
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная фильтрация рейтинга по имени, которого нет в базе
+  status: fail
 
 - summary: |
-    
-  status: 
+    Проверка недоступности битвы после отмены
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход на главную страницу после завершение игры
+  status: fail
 
 - summary: |
-    
-  status: 
+    Успешная сортировка списка пользователей по рейтингу в убывающем порядке
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная сортировка по столбцу "Games played"
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная сортировка по дате регистрации пользователей
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешное отображение игр с ботами в списке рейтинга при включенном фильтре
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная классификация в обратном порядке
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в раздел настроек через выпадающее меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешная работа ссылки на сайт Hexlet из меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в раздел "Tournaments" из меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный выход из аккаунта
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в общий рейтинг пользователей из меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в Discord по ссылке в меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в Telegram по ссылке в меню
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешное открытие репозитория GitHub с исходным кодом проекта
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в раздел с задачами для практики
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный переход в раздел со списком кланов
+  status: pass
 
 - summary: |
-    
-  status: 
+    Успешный просмотр клана
+  status: pass
 
 - summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
-
-- summary: |
-    
-  status: 
+    Успешная установка звезды проекту на GitHub
+  status: pass
