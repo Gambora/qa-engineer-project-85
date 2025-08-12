@@ -72,10 +72,10 @@
     У пользователя должна автоматически создаваться личная страница
   prerequisites: |
     Пользователь авторизован
+    Открыта главная страница https://codebattle.hexlet.io/#lobby
   test-data: |
     - Нет данных
   steps:
-    - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать на никнейм 
     - Нажать "My profile"
   expected-result: |
