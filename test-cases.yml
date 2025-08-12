@@ -27,7 +27,7 @@
     Открыта страница регистрации
     У пользователя есть аккаунт GitHub и Discord
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать кнопку «Зарегистрироваться через GitHub»
     - Выйти из системы
@@ -60,7 +60,7 @@
     Пользователь авторизован
     Ранее были сыграны игры или турниры
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
   expected-result: |
@@ -73,7 +73,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать на никнейм 
@@ -88,7 +88,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Навести курсор на никнейм игрока в лобби
@@ -102,11 +102,11 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Level = 1
-    Game Type = With other user
-    Time control = 8 min
-    Choose task by name or tags = random task
-    Tags = rest
+    - Level = 1
+    - Game Type = With other user
+    - Time control = 8 min
+    - Choose task by name or tags = random task
+    - Tags = rest
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать "Create a game"
@@ -126,7 +126,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Навести курсор на никнейм любого игрока
     - Нажать "Play active game"
@@ -141,12 +141,12 @@
     Пользователь авторизован
     Открыта главная страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    Level = 1
-    Game Type = With a bot
-    Time control = 10 min
-    Choose task by name or tags = rect_area
-    Tags = math, rest
-    Код = const _ = require("lodash");
+    - Level = 1
+    - Game Type = With a bot
+    - Time control = 10 min
+    - Choose task by name or tags = rect_area
+    - Tags = math, rest
+    - Код = const _ = require("lodash");
           const R = require("rambda");
 
           const solution = (width, length) => {
@@ -174,7 +174,7 @@
     В системе есть игроки с победами и рейтингом
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
   expected-result: |
@@ -188,11 +188,11 @@
     Пользователь авторизован
     Открыта главная страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    Level = 2
-    Game Type = With a bot
-    Time control = 8 min
-    Choose task by name or tags = random task
-    Tags = rest
+    - Level = 2
+    - Game Type = With a bot
+    - Time control = 8 min
+    - Choose task by name or tags = random task
+    - Tags = rest
   steps:
     - Нажать "Create a game"
     - Выбрать уровень
@@ -211,11 +211,11 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Level = 2
-    Game Type = With a bot
-    Time control = 8 min
-    Choose task by name or tags = random task
-    Tags = rest 
+    - Level = 2
+    - Game Type = With a bot
+    - Time control = 8 min
+    - Choose task by name or tags = random task
+    - Tags = rest 
   steps:
     - Открыть главную страницу сайта https://codebattle.hexlet.io/#lobby
     - Нажать "Create a game"
@@ -236,7 +236,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Текст сообщения = "Hello!"
+    - Текст сообщения = "Hello!"
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - В общем чате написать сообщение
@@ -252,7 +252,7 @@
     На сайте есть завершённые игры
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать "История"
@@ -266,7 +266,7 @@
   prerequisites: |
     Пользователь авторизован и находится в процессе игры
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать "Сдаться"
     - Нажать "Подтвердить выбор"
@@ -280,11 +280,11 @@
   prerequisites: |
     Пользователь в системе на главной странице
   test-data: |
-    Level = 1
-    Game Type = With a bot
-    Time control = 8 min
-    Choose task by name or tags = sort_by_name
-    Tags = no tags
+    - Level = 1
+    - Game Type = With a bot
+    - Time control = 8 min
+    - Choose task by name or tags = sort_by_name
+    - Tags = no tags
   steps:
     - Нажать "Create a game"
     - Выбрать уровень
@@ -302,7 +302,7 @@
   prerequisites: |
     Пользователь авторизован и в процессе игры
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на кнопку выбора языка
     - Выбрать любой язык, кроме установленного
@@ -316,7 +316,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть сайт https://codebattle.hexlet.io/#lobby
     - Нажать на аватар или ник
@@ -337,7 +337,7 @@
   prerequisites: |
     Пользователь авторизован, сыгран хотя бы один турнир
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/#lobby
     - Нажать на "Tournaments"
@@ -386,7 +386,7 @@
   prerequisites: |
     Пользователь авторизован, есть участники с рейтингом
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу
     - Убедиться, что таблица отображает ник, рейтинг, число игр, дату регистрации
@@ -401,7 +401,7 @@
     Пользователь авторизован
     На сайте зарегистрировано более 50 пользователей
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу 
     - Нажать "Top list"
@@ -421,7 +421,7 @@
     Пользователь авторизован
     Есть несколько пользователей с разными именами
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу 
     - Нажать "Top list"
@@ -437,7 +437,7 @@
     Пользователь авторизован
     В лобби есть активная игра между другими пользователями
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Перейти на главную страницу 
     - Нажать кнопку "Show"
@@ -451,7 +451,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть страницу рейтинга игроков https://codebattle.hexlet.io/users
     - Ввести в поле "Username" любой несуществующий ник
@@ -465,7 +465,7 @@
   prerequisites: |
     Пользователь авторизован и находится в игре
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать "Завершить игру"
     - Нажать "Подтвердить"
@@ -479,7 +479,7 @@
   prerequisites: |
     Пользователь авторизован и находится в активной игре
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать "Завершить"
     - Нажать "Подтвердить"
@@ -493,7 +493,7 @@
   prerequisites: |
     Пользователь авторизован и находится на странице рейтинга
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на "Rating"
   expected-result: |
@@ -506,7 +506,7 @@
   prerequisites: |
     Пользователь авторизован и находится на странице рейтинга
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на "Games played"
     - Ещё раз нажать на "Games played"
@@ -520,7 +520,7 @@
   prerequisites: |
     Пользователь авторизован и находится на странице рейтинга
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на "Joined"
     - Нажать на "Joined" ещё раз
@@ -534,7 +534,7 @@
   prerequisites: |
    Пользователь авторизован и находится на странице рейтинга 
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Установить флажок "With bots"
   expected-result: |
@@ -547,7 +547,7 @@
   prerequisites: |
     Пользователь авторизован и находится на странице рейтинга
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на "Rank"
   expected-result: |
@@ -560,7 +560,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Settings"
@@ -574,7 +574,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Hexlet"
@@ -588,7 +588,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Tournaments"
@@ -602,7 +602,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть сайт https://codebattle.hexlet.io/#lobby
     - Нажать на ник или аватар
@@ -617,7 +617,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - "Users rating"
@@ -631,7 +631,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать на "Join Discord"
@@ -645,7 +645,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Tg#codebattle"
@@ -659,7 +659,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "SourceCode"
@@ -673,7 +673,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Tasks"
@@ -687,7 +687,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Clans"
@@ -701,7 +701,7 @@
   prerequisites: |
     Пользователь авторизован и находится на главной странице
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Нажать на ник или аватар
     - Нажать "Clans"
@@ -717,7 +717,7 @@
     Пользователь авторизован в GitHub
     Пользователь авторизован на сайте https://codebattle.hexlet.io/#lobby
   test-data: |
-    Нет данных
+    - Нет данных
   steps:
     - Открыть главную страницу сайта https://codebattle.hexlet.io/#lobby
     - Нажать на "Stars us" с иконкой GitHub
@@ -725,4 +725,3 @@
     - Нажать на "Stars"
   expected-result: |
     Звезда успешно установлена
-        
