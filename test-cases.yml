@@ -34,8 +34,8 @@
   test-data: |
     - Nickname = Login45
     - Email = mail@micro.com
-    - Password = tester818
-    - Password Confirmation = tester818
+    - Password = tester818*
+    - Password Confirmation = tester818*
   steps:
     - Нажать "Sing up"
     - Ввести Nickname
@@ -70,7 +70,7 @@
     Открыта страница логина
   test-data: |
     - Email = mail@micro.com
-    - Password = tester818
+    - Password = tester818*
   steps:
     - Ввести Email
     - Ввести Password
@@ -290,6 +290,20 @@
     - Нажать "Create battle"
   expected-result: |
     Пользователь видит бота в качестве соперника 
+
+- summary: |
+    Успешная отправка приглашения на поединок с любым игроком
+  requirement: |
+    В игру можно играть с любым пользователем
+  prerequisites: |
+    Пользователь авторизован
+    Открыта главная страница https://codebattle.hexlet.io/#lobby
+  test-data: |
+    - Нет данных
+  steps:
+    - Нажать "Fight" рядом с любым игроком
+  expected-result: |
+    Другой игрок получил приглашение на поелинок
     
 - summary: |
     Успешное ограничение по времени во время игры
